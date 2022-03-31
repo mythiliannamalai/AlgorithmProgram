@@ -14,21 +14,23 @@ namespace AlgorithmProgram
             {
                 Console.WriteLine(word);
             }
-           int res= Array.BinarySearch(words,"naveen");
-            if(res>0)
+            string value = "naveen";
+
+            int res = Array.BinarySearch(words, value);
+            if (res > 0)
             {
-                Console.WriteLine(" index num is{0}.word is  founded",res);
+                Console.WriteLine(" index num is{0}.{1} word is  founded", res, value);
             }
             else
             {
                 Console.WriteLine("word is not in list");
             }
-            
         }
         static void Main(string[]args)
         {
             Program program = new Program();
             program.BinarySearch();
+            
         }
     }
 
